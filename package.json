@@ -1,0 +1,28 @@
+{
+  "name": "fsopen-phonebook",
+  "version": "1.0.0",
+  "description": "Full Stack Open part 3 exercises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkauppinen/fsopen-phonebook.git"
+  },
+  "author": "Kirsi Kauppinen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkauppinen/fsopen-phonebook/issues"
+  },
+  "homepage": "https://github.com/kkauppinen/fsopen-phonebook#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}
