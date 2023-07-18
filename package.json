@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "lint": "eslint .",
+    "build:ui": "rm -rf build && cd ../fullstackopen/Osa2/puhelinluettelo && npm run build && cp -r build ../../../fsopen-phonebook",
+    "deploy": "fly deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "logs:prod": "fly logs"
   },
   "repository": {
     "type": "git",
@@ -18,11 +23,14 @@
   },
   "homepage": "https://github.com/kkauppinen/fsopen-phonebook#readme",
   "devDependencies": {
+    "eslint": "^8.31.0",
     "nodemon": "^2.0.19"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.1",
+    "mongoose": "^6.6.5",
     "morgan": "^1.10.0"
   }
 }
